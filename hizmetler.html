@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hizmetlerimiz - Kayzer Hukuk</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+    <nav class="fixed w-full z-50 bg-black/20 backdrop-blur-md border-b-2 border-yellow-500 px-6 py-8 flex justify-between items-center">
+        <a href="anasayfa.html">
+          <div class="flex items-center space-x-4">
+            <img src="photos/kayzerr10-Photoroom.png" alt="Kayzer Logo" class="h-24">
+            <div>
+              <h1 class="text-3xl font-extrabold tracking-wide">KAYZER</h1>
+              <p class="text-base tracking-wider">HUKUK & DANIŞMANLIK</p>
+            </div>
+          </div>
+        </a>
+      
+        <div class="hidden md:flex items-center space-x-10 text-lg font-medium" id="navbar">
+            <div class="relative group">
+              <a href="hizmetler.html" class="nav-link cursor-pointer text-white hover:text-yellow-400 transition-colors duration-200">
+                HİZMETLERİMİZ ▾
+              </a>
+              <ul class="absolute left-0 mt-3 w-56 bg-yellow-700 text-white rounded-xl shadow-xl opacity-0 scale-95 invisible group-hover:visible group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-out z-50">
+                <li><a href="hizmetler.html" class="block px-5 py-3 hover:bg-yellow-600 rounded-t-xl">Ticaret Hukuku</a></li>
+                <li><a href="#miras" class="block px-5 py-3 hover:bg-yellow-600">Miras Hukuku</a></li>
+                <li><a href="#iş" class="block px-5 py-3 hover:bg-yellow-600">İş Hukuku</a></li>
+                <li><a href="#aile" class="block px-5 py-3 hover:bg-yellow-600">Aile Hukuku</a></li>
+                <li><a href="#idare" class="block px-5 py-3 hover:bg-yellow-600">İdare Hukuku</a></li>
+                <li><a href="#icraiflas" class="block px-5 py-3 hover:bg-yellow-600">İcra ve İflas Hukuku</a></li>
+                <li><a href="#ceza" class="block px-5 py-3 hover:bg-yellow-600">Ceza Hukuku</a></li>
+                <li><a href="#tüketici" class="block px-5 py-3 hover:bg-yellow-600 rounded-b-xl">Tüketici Hukuku</a></li>
+              </ul>
+            </div>
+            <a href="hakkimizda.html" class="text-white hover:text-yellow-400 transition-colors duration-200">HAKKIMIZDA</a>
+            <a href="iletisim.html" class="text-white hover:text-yellow-400 transition-colors duration-200">İLETİŞİM</a>
+          </div>
+
+        <button id="menu-toggle" class="md:hidden text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+          </svg>
+        </button>
+      </nav>
+      
+
+      <section id="hizmetler" class="py-20 px-6 bg-gray-800">
+        <h3 class="text-4xl font-bold text-center mt-24 mb-16">Hizmetlerimiz</h3>
+        <div class="grid gap-8 grid-cols-3">
+          
+          <div class="bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-yellow-400 transform transition-transform duration-300 max-w-3xl mx-auto cursor-pointer">
+            <img src="photos/ticarethukuku.jpeg" alt="Ticaret Hukuku" class="rounded-xl mb-6 w-full h-auto object-cover shadow-md">
+          
+            <h3 id="ticaret" class="text-3xl font-extrabold text-yellow-400 mb-4 border-b border-yellow-500 pb-2">Ticaret Hukuku</h3>
+          
+            <p class="text-base text-gray-200 leading-relaxed">
+              Ticaret Hukuku, üretim, alım satım, değişim ve tüketime yönelik ticari faaliyetlerin bütününü düzenleyen hukuk dalıdır. Ticari hayatı düzenleyen ve kontrol altında tutmaya çalışan bu hukuk dalı, sağlıklı bir ticaret için can damarı niteliğindedir.
+            </p>
+
+            <div class="mt-6">
+              <div>
+                <h4 class="text-xl font-semibold text-yellow-300 mb-2">Dava Vekilliği Hizmetlerimiz:</h4>
+                <ul class="list-disc list-inside text-gray-100 text-sm space-y-1">
+                  <li>Konkordato davaları</li>
+                  <li>Haksız rekabet davaları</li>
+                  <li>İflas ve iflas erteleme davaları</li>
+                  <li>Marka-patent başvuru ve davaları</li>
+                  <li>Şirketlerin alacak davaları</li>
+                  <li>Ticaret unvanına tecavüzün önlenmesi davaları</li>
+                  <li>Tüketici hukukundan doğan davalar</li>
+                  <li>Vergi hukukundan doğan davalar</li>
+                </ul>
+              </div>
+          
+              <div class="mt-6">
+                <h4 class="text-xl font-semibold text-yellow-300 mb-2">Danışmanlık Hizmetlerimiz:</h4>
+                <ul class="list-disc list-inside text-gray-100 text-sm space-y-1">
+                  <li>Ticari sözleşmelerin düzenlenmesi ve denetlenmesi</li>
+                  <li>Şirket devralma sözleşmelerinin düzenlenmesi ve denetlenmesi</li>
+                  <li>Şirket birleşme sözleşmelerinin düzenlenmesi ve denetlenmesi</li>
+                  <li>Kurumsal yönetim danışmanlığı</li>
+                  <li>Günlük ticari iş ve işlemlerde hukuk danışmanlığı</li>
+                  <li>Haksız rekabet hukuku danışmanlığı</li>
+                  <li>Acente sözleşmelerinin düzenlenmesi ve denetlenmesi</li>
+                  <li>Cari hesap ilişkilerinin düzenlenmesi ve denetlenmesi</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+    
+          <div class="bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-yellow-400 transform transition-transform duration-300  max-w-3xl mx-auto">
+            <img src="photos/mirashukuku.jpg" alt="Miras Hukuku" class="rounded-xl mb-6 w-full h-auto object-cover shadow-md">
+          
+            <h3 id="miras" class="text-3xl font-extrabold text-yellow-400 mb-4 border-b border-yellow-500 pb-2">Miras Hukuku</h3>
+          
+            <p class="text-base text-gray-200 leading-relaxed">
+              Miras hukuku, bir kişinin ölümü halinde haklarının ve varlıklarının ne olacağını düzenler.
+              Ölen kişinin geride bıraktığı varlığı <strong>tereke</strong> olarak isimlendirilir. Terekenin miras yoluyla mirasçılara geçmeye (intikal) elverişli hak ve borçları miras hukukunun konusunu oluşturur.
+            </p>
+          
+            <div class="mt-6">
+              <h4 class="text-xl font-semibold text-yellow-300 mb-2">Dava ve Danışmanlık Hizmetlerimiz:</h4>
+              <ul class="list-disc list-inside text-gray-100 text-sm space-y-1">
+                <li>Tenkis Davaları</li>
+                <li>Mirastan Mal Kaçırma (Muris Muvazaası) Davaları</li>
+                <li>Veraset İlamının alınması işlemleri</li>
+                <li>Tereke Tespiti, terekenin yönetilmesi davalarının miras avukatı olarak takibi</li>
+                <li>Mirasın reddi davaları</li>
+                <li>Miras Ortaklığının giderilmesi davası (İzale-i Şuyu)</li>
+                <li>Mirastan feragat sözleşmesi</li>
+                <li>Miras sözleşmesi, vasiyetname işlemleri</li>
+                <li>Miras şirketinin yönetimi</li>
+              </ul>
+            </div>
+          </div>
+          
+    
+          <div class="bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-yellow-400 transform transition-transform duration-300  max-w-3xl mx-auto">
+            <img src="photos/ishukuku.jpg" alt="İş Hukuku" class="rounded-xl mb-6 w-full h-auto object-cover shadow-md">
+          
+            <h3 id="iş" class="text-3xl font-extrabold text-yellow-400 mb-4 border-b border-yellow-500 pb-2">İş Hukuku</h3>
+          
+            <p class="text-base text-gray-200 leading-relaxed mb-6">
+              Hukuk büromuzca, iş hukukunun tüm alanlarında danışmanlık ve dava takibi hizmetleri verilmektedir.
+            </p>
+          
+            <div>
+              <h4 class="text-xl font-semibold text-yellow-300 mb-2">Dava ve Danışmanlık Hizmetlerimiz:</h4>
+              <ul class="list-disc list-inside text-gray-100 text-sm space-y-1">
+                <li>Hizmet sözleşmelerinin hazırlanması</li>
+                <li>İş akdinin sona erme safhasında fesih bildirimi hazırlanması ve hukuki bilgilendirme</li>
+                <li>Kıdem ve ihbar tazminatı, fazla mesai, yıllık izin, hafta tatili gibi işçilik alacakları için dava açılması</li>
+                <li>İşe iade davası açılması ve takibi</li>
+                <li>Sendikal nedenlerle iş akdi feshi davaları</li>
+                <li>Mobbing ve kötü niyet tazminatı davaları</li>
+                <li>Fazla mesai ve yıllık izin ücretleri ile ilgili işçilik alacağı davaları</li>
+                <li>Sigortasız çalıştırma durumlarında hizmet tespiti davalarının açılması ve takibi</li>
+                <li>İş kazasından kaynaklı tazminat ve ceza davalarının takibi</li>
+                <li>İşçi ve işyeri güvenliği hakkında mevzuata ilişkin bilgilendirme</li>
+                <li>İşveren ve çalışanların yasal hakları hakkında danışmanlık</li>
+                <li>Yaralanma, ölüm ve iş görmezlik halleriyle ilgili davalar</li>
+                <li>İş Kanunu ve ilgili mevzuattan doğan tüm ihtilaflara dair dava süreci yönetimi</li>
+                <li>Şirket içi yönetmelikler, disiplin yönetmelikleri ve talimatnamelerin hazırlanması</li>
+                <li>Sendikal mevzuat çerçevesinde danışmanlık hizmeti</li>
+                <li>Sosyal Güvenlik mevzuatından kaynaklı ihtilaflara ilişkin dava süreci yönetimi</li>
+              </ul>
+            </div>
+          </div>
+          
+    
+          <div class="bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-yellow-400 transform transition-transform duration-300  max-w-3xl mx-auto">
+            <img src="photos/ailehukuku.jpg" alt="Aile Hukuku" class="rounded-xl mb-6 w-full h-auto object-cover shadow-md">
+          
+            <h3 id="aile" class="text-3xl font-extrabold text-yellow-400 mb-4 border-b border-yellow-500 pb-2">Aile Hukuku</h3>
+          
+            <p class="text-base text-gray-200 leading-relaxed mb-6">
+              Aileye ilişkin konularla ilgilenen, medeni hukukun kapsamı içinde yer alan bir hukuk dalıdır. Başlıca konular arasında nişanlanma, evlenme, boşanma, mal rejimleri, soybağı, evlat edinme, velayet, nafaka, vesayet, kadın ve çocuk hakları yer alır.
+            </p>
+          
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold text-yellow-300 mb-2">Dava Vekilliği Hizmetlerimiz:</h4>
+              <ul class="list-disc list-inside text-gray-100 text-sm space-y-1">
+                <li>Boşanma ve velayet davaları</li>
+                <li>Tazminat ve nafaka davaları</li>
+                <li>Babalık ve nesep davaları (reddi, tashihi)</li>
+                <li>Çocuk mallarının yönetimi</li>
+                <li>Aile içi şiddet ve korunma davaları</li>
+                <li>Kişilik haklarına saldırı davaları</li>
+                <li>Aile konutu uygulamaları</li>
+                <li>4320 sayılı kanuna dayalı davalar</li>
+                <li>Mal rejimi (ortaklık, ayrılık, alım hakkı) davaları</li>
+                <li>Mirasın reddi, mirasçı belgesi ve iptali davaları</li>
+                <li>Nişan bozulması davaları</li>
+                <li>Evlat edinme ve evlenme izni davaları</li>
+                <li>Yaş düzeltilmesi ve kazai rüşt davaları</li>
+                <li>Terekede ihtiyati tedbirler</li>
+                <li>Vesayet, kayyım ve vasiyetnamenin iptali davaları</li>
+              </ul>
+            </div>
+          
+            <div>
+              <h4 class="text-xl font-semibold text-yellow-300 mb-2">Danışmanlık Hizmetlerimiz:</h4>
+              <ul class="list-disc list-inside text-gray-100 text-sm space-y-1">
+                <li>Velayet ve vesayet denetimi</li>
+                <li>Nafaka ve uzaklaştırma kararlarının takibi</li>
+                <li>Aile hukukuna dair korunma önlemleri</li>
+                <li>Konut ve mallar üzerindeki hakların denetlenmesi</li>
+                <li>Mirasçılık haklarının korunması</li>
+                <li>Eşler arası yasal sorunların çözümü</li>
+                <li>Mal rejimi yönetimi ve önlemleri</li>
+              </ul>
+            </div>
+          </div>
+          
+    
+          <div class="bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-yellow-400 transform transition-transform duration-300  max-w-3xl mx-auto">
+            <img src="photos/idarehukuku.jpg" alt="İdare Hukuku" class="rounded-xl mb-6 w-full h-auto object-cover shadow-md">
+          
+            <h3 id="idare" class="text-3xl font-extrabold text-yellow-400 mb-4 border-b border-yellow-500 pb-2">İdare Hukuku</h3>
+          
+            <p class="text-base text-gray-200 leading-relaxed mb-6">
+              İdare Hukuku; kamu kurumlarının işleyişini, yetki ve sorumluluklarını düzenler. Anayasaya dayanan bu hukuk dalı, kamu yararını gözeterek idarenin yasal sınırlar içinde hareket etmesini sağlar. İdari işlemlerin bireyler üzerindeki etkileri nedeniyle, hukuka aykırı işlemlerin iptali bu hukuk dalının kapsamındadır.
+            </p>
+          
+            <div>
+              <h4 class="text-xl font-semibold text-yellow-300 mb-2">Dava Vekilliği Hizmetlerimiz:</h4>
+              <ul class="list-disc list-inside text-gray-100 text-sm space-y-1">
+                <li>İptal davaları</li>
+                <li>Kentsel dönüşüm hukuku ve iptal davaları</li>
+                <li>Tam yargı davaları</li>
+                <li>Ecrimisil düzeltme ihbarnamelerinin iptali davaları</li>
+                <li>Belediye cezalarına karşı iptal davaları</li>
+                <li>İdarenin düzenleyici işlemlerine karşı iptal davaları</li>
+                <li>Kamu ihalelerine ilişkin danışmanlık ve dava süreçlerinin takibi</li>
+                <li>İdare mahkemesinin görevli olduğu diğer özel kanun davaları</li>
+                <li>Kamu hizmetlerinin yürütülmesine ilişkin idari sözleşmelerden doğan anlaşmazlık davaları (tahkim hariç)</li>
+              </ul>
+            </div>
+          </div>
+          
+    
+          <div class="bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-yellow-400 transform transition-transform duration-300  max-w-3xl mx-auto">
+            <img src="photos/icraiflashukuku.jpg" alt="İcra ve İflas Hukuku" class="rounded-xl mb-6 w-full h-auto object-cover shadow-md">
+          
+            <h3 id="icraiflas" class="text-3xl font-extrabold text-yellow-400 mb-4 border-b border-yellow-500 pb-2">İcra ve İflas Hukuku</h3>
+          
+            <p class="text-base text-gray-200 leading-relaxed mb-6">
+              Alacakların tahsili sürecinde, borçlunun menkul ve gayrimenkulleri ile üçüncü kişilerdeki alacaklarının tespiti amacıyla kapsamlı hukuki araştırmalar yapılır. Hukuk büromuz, alacaklı ve borçlular arasındaki uyuşmazlıkların çözümüne yönelik her aşamada hukuki destek sağlamaktadır.
+            </p>
+          
+            <div>
+              <h4 class="text-xl font-semibold text-yellow-300 mb-2">Dava ve Danışmanlık Hizmetlerimiz:</h4>
+              <ul class="list-disc list-inside text-gray-100 text-sm space-y-1">
+                <li>İlamlı ve ilamsız icra takipleri</li>
+                <li>İflas ve iflas erteleme davaları</li>
+                <li>Konkordato davaları ve danışmanlığı</li>
+                <li>Alacak-veren uzlaşması ve sulh protokollerinin hazırlanması</li>
+                <li>Banka kredi sözleşmeleri kaynaklı uyuşmazlıklar</li>
+                <li>Bireysel ve ticari alacakların takibi ve tahsili</li>
+                <li>Arabuluculuk ve uzlaşma ile alacak tahsili</li>
+                <li>Kambiyo senedi, cari hesap, sözleşme ve fatura kaynaklı alacakların tahsili</li>
+                <li>Finansal ve filo kiralama alacaklarının tahsili</li>
+                <li>Alacak, istirdat, istihkak davaları</li>
+                <li>İtirazın iptali, takibin iptali ve menfi tespit davaları</li>
+                <li>Rehin ve ipotekli alacaklarda satış ve ihale süreçleri, ihalenin feshi davaları</li>
+                <li>İcra suçlarına ilişkin şikayet süreçleri</li>
+                <li>Taşınır ve taşınmazların icra yoluyla satışı</li>
+                <li>Tasarrufun iptali davaları</li>
+                <li>Tüm icra hukuku işlemlerine dair resmi yazışmaların yürütülmesi</li>
+              </ul>
+            </div>
+          </div>
+          
+    
+          <div class="bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-yellow-400 transform transition-transform duration-300  max-w-3xl mx-auto">
+            <img src="photos/cezahukuku.jpeg" alt="Ceza Hukuku" class="rounded-xl mb-6 w-full h-auto object-cover shadow-md">
+          
+            <h3 id="ceza" class="text-3xl font-extrabold text-yellow-400 mb-4 border-b border-yellow-500 pb-2">Ceza Hukuku</h3>
+          
+            <p class="text-base text-gray-200 leading-relaxed mb-6">
+              Ceza hukuku; kişilerin işledikleri fiillerin suç sayılıp sayılmayacağını, suç işleyen kişilere uygulanacak yaptırımları belirleyen kamu hukukunun bir dalıdır. Hukuk büromuz, soruşturma ve kovuşturma evrelerinde şüpheli, sanık, müşteki veya mağdur sıfatıyla yer alan kişilere etkin hukuki destek sunmaktadır.
+            </p>
+          
+            <div>
+              <h4 class="text-xl font-semibold text-yellow-300 mb-2">Dava ve Danışmanlık Hizmetlerimiz:</h4>
+              <ul class="list-disc list-inside text-gray-100 text-sm space-y-1">
+                <li>Soruşturma ve kovuşturma süreçlerinin takibi</li>
+                <li>Gözaltı ve tutuklama işlemlerine itiraz</li>
+                <li>Ağır ceza ve asliye ceza davalarının takibi</li>
+                <li>Kasten yaralama, tehdit, hakaret, hırsızlık, dolandırıcılık gibi suçlara ilişkin savunma ve temsil</li>
+                <li>Uyuşturucu madde suçları, cinsel suçlar, mala zarar verme gibi suçlarda etkin savunma</li>
+                <li>Adli para cezası, hapis cezası ertelemesi ve hükmün açıklanmasının geri bırakılması (HAGB) konularında destek</li>
+                <li>Ceza infaz sürecinde hakların takibi ve başvuru yollarının kullanılması</li>
+                <li>İstinaf ve temyiz başvurularının hazırlanması ve takibi</li>
+                <li>Şikâyet dilekçesi hazırlanması ve suç duyurusu işlemleri</li>
+                <li>Mağdur ve müşteki vekilliği hizmetleri</li>
+              </ul>
+            </div>
+          </div>
+          
+    
+          <div class="bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-yellow-400 transform transition-transform duration-300  max-w-3xl mx-auto">
+            <img src="photos/tüketicihukuku.jpg" alt="Tüketici Hukuku" class="rounded-xl mb-6 w-full h-auto object-cover shadow-md">
+          
+            <h3 id="tüketici" class="text-3xl font-extrabold text-yellow-400 mb-4 border-b border-yellow-500 pb-2">Tüketici Hukuku</h3>
+          
+            <p class="text-base text-gray-200 leading-relaxed mb-6">
+              Tüketicinin Korunması Hakkında Kanun başta olmak üzere Borçlar Kanunu ve Ticaret Kanunu gibi yasal düzenlemeler çerçevesinde, tüketicilerin karşılaştığı uyuşmazlıkların çözümünde Tüketici Hakem Heyetleri ve Tüketici Mahkemelerinde vekillik ve danışmanlık hizmetleri sunmaktayız.
+            </p>
+          
+            <div>
+              <h4 class="text-xl font-semibold text-yellow-300 mb-2">Dava ve Danışmanlık Hizmetlerimiz:</h4>
+              <ul class="list-disc list-inside text-gray-100 text-sm space-y-1">
+                <li>Ayıplı mal ve hizmetlerden kaynaklanan davalar</li>
+                <li>Haksız şart içeren sözleşmelerle ilgili uyuşmazlıklar</li>
+                <li>Kredi kartı ve tüketici kredilerinden doğan davalar</li>
+                <li>Konut finansmanı ve TOKİ sözleşmeleriyle ilgili ihtilaflar</li>
+                <li>Abonelik, taksitli, kampanyalı ve kapıdan satış sözleşmeleri</li>
+                <li>Mesafeli satış ve paket tur sözleşmelerinden doğan davalar</li>
+                <li>Devre tatil sözleşmelerinin denetimi</li>
+                <li>Tüketici sözleşmelerinin hazırlanması ve mevzuata uygunluğunun sağlanması</li>
+                <li>İşletmelerin tüketici hukukuna uygunluk denetimi</li>
+                <li>Satıcı ve alıcı arasında uyuşmazlıkların çözümü</li>
+                <li>Tüketici Hakem Heyeti başvurularının hazırlanması ve takibi</li>
+              </ul>
+            </div>
+          </div>
+          
+    
+        </div>
+      </section>
+    
+    
+      <section id="iletisim" class="py-20 px-6 bg-black text-center">
+        <h2 class="text-4xl font-bold mb-6">Bizimle İletişime Geçin</h2>
+        <p class="text-gray-400 mb-8">Sorularınızı yanıtlamaktan mutluluk duyarız.</p>
+        <a href="mailto:info@kayzerhukuk.com" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-full">
+          E-Posta Gönder
+        </a>
+      </section>
+    
+      <footer class="bg-gray-900 text-center text-gray-400 py-6 text-sm">
+        © 2025 Kayzer Hukuk ve Danışmanlık. Tüm hakları saklıdır.
+      </footer>
+    
+      <script src="java.js"> </script>
+
+</body>
+</html>
