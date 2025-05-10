@@ -52,3 +52,8 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % images.length;
   imageElement.src = images[currentIndex];
 }, 10000);
+
+  function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  }
