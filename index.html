@@ -12,17 +12,17 @@
 </head>
 
 <body class="bg-gradient-to-r from-slate-900 to-black text-white font-sans">
-
 <nav class="fixed w-full z-50 bg-black/20 backdrop-blur-md border-b-2 border-yellow-500 px-6 py-8 flex justify-between items-center">
-  <a href="index.html" class="flex items-center space-x-4">
-    <img src="photos/kayzer-png.png" alt="Kayzer Logo" class="h-24">
-    <div>
-      <h1 class="text-3xl font-extrabold tracking-wide text-white">KAYZER</h1>
-      <p class="text-base tracking-wider text-white">HUKUK & DANIŞMANLIK</p>
+  <a href="index.html">
+    <div class="flex items-center space-x-4">
+      <img src="photos/kayzer-png.png" alt="Kayzer Logo" class="h-24">
+      <div>
+        <h1 class="text-3xl font-extrabold tracking-wide">KAYZER</h1>
+        <p class="text-base tracking-wider">HUKUK & DANIŞMANLIK</p>
+      </div>
     </div>
   </a>
 
-  <!-- Ana Menü - Mobilde gizli, masaüstü görünür -->
   <div class="hidden md:flex items-center space-x-10 text-lg font-medium" id="navbar">
     <div class="relative group">
       <a href="hizmetler.html" class="nav-link cursor-pointer text-white hover:text-yellow-400 transition-colors duration-200">
@@ -39,37 +39,35 @@
         <li><a href="/hizmetler.html#tüketici" class="block px-5 py-3 hover:bg-yellow-600 rounded-b-xl">Tüketici Hukuku</a></li>
       </ul>
     </div>
+  
     <a href="hakkimizda.html" class="text-white hover:text-yellow-400 transition-colors duration-200">HAKKIMIZDA</a>
     <a href="iletisim.html" class="text-white hover:text-yellow-400 transition-colors duration-200">İLETİŞİM</a>
   </div>
 
-  <!-- Menü Toggle Butonu (Mobilde Göster) -->
-  <button id="menu-toggle" class="md:hidden text-white">
+  <!-- Mobil Menü Butonu -->
+  <button id="menu-toggle" class="md:hidden text-white" onclick="toggleMenu()">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
     </svg>
   </button>
-</nav>
-
-<!-- Mobil Menü (Gizli Başlangıçta) -->
+  <!-- Mobil Menü (hidden by default) -->
 <div id="mobile-menu" class="md:hidden hidden bg-black/90 text-white px-6 py-6 space-y-4 text-lg font-medium">
   <a href="hizmetler.html" class="block hover:text-yellow-400">HİZMETLERİMİZ</a>
   <a href="hakkimizda.html" class="block hover:text-yellow-400">HAKKIMIZDA</a>
   <a href="iletisim.html" class="block hover:text-yellow-400">İLETİŞİM</a>
 </div>
-
-
+</nav>
 
   <header class="h-screen flex flex-col justify-center items-center text-center space-y-3 px-4">
     <img src="/photos/kayzer-png.png" alt="Kayzer Logo" style="width: 800px; height: 800px;">
 
-    <p class="text-xl text-gray-300">Hakkınızı Arayın, Biz Yanınızdayız.</p>
-    <a href="#hakkimizda" class="mt-6 bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-full">
+    <p class="text-gray-300">Hakkınızı Arayın, Biz Yanınızdayız.</p>
+    <a href="#hakkimizda" class="mt-16 bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-full">
       Biz Kimiz
     </a>
   </header>
 
-  <section id="hakkimizda" class="service-card py-12 px-6 bg-gray-800 text-white">
+  <section id="hakkimizda" class="service-card py-24 px-12 bg-gray-800 text-white">
     <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
       <div class="flex justify-center rounded-2xl border-4 border-yellow-400">
         <img id="slideshow-image" src="photos/mustafa.JPG"
