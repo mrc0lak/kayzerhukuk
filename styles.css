@@ -1,0 +1,29 @@
+/* Hidden sınıfı */
+.hidden {
+  display: none !important;
+}
+
+/* Dropdown menü */
+ul {
+  display: none; /* Başlangıçta gizli */
+}
+
+ul.visible {
+  display: block; /* Görünür olduğunda göster */
+}
+
+/* Mobil menü */
+#mobile-menu {
+  display: none; /* Başlangıçta gizli */
+}
+
+#mobile-menu.hidden {
+  display: block; /* Menüyü gösterdiğimizde */
+}
+
+/* Menü geçiş efektleri */
+nav {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Diğer stil kodları */
