@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kayzer Hukuk</title>
+  <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -13,7 +14,7 @@
 
 <body class="bg-gradient-to-r from-slate-900 to-black text-white font-sans">
 
- <nav class="fixed w-full z-50 bg-black/20 backdrop-blur-md border-b-2 border-yellow-500 px-6 py-8 flex justify-between items-center">
+<nav class="fixed w-full z-50 bg-black/20 backdrop-blur-md border-b-2 border-yellow-500 px-6 py-8 flex justify-between items-center">
   <a href="index.html" class="flex items-center space-x-4">
     <img src="photos/kayzer-png.png" alt="Kayzer Logo" class="h-24">
     <div>
@@ -22,6 +23,7 @@
     </div>
   </a>
 
+  <!-- Ana Menü - Mobilde gizli, masaüstü görünür -->
   <div class="hidden md:flex items-center space-x-10 text-lg font-medium" id="navbar">
     <div class="relative group">
       <a href="hizmetler.html" class="nav-link cursor-pointer text-white hover:text-yellow-400 transition-colors duration-200">
@@ -41,6 +43,8 @@
     <a href="hakkimizda.html" class="text-white hover:text-yellow-400 transition-colors duration-200">HAKKIMIZDA</a>
     <a href="iletisim.html" class="text-white hover:text-yellow-400 transition-colors duration-200">İLETİŞİM</a>
   </div>
+
+  <!-- Menü Toggle Butonu (Mobilde Göster) -->
   <button id="menu-toggle" class="md:hidden text-white">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
@@ -48,11 +52,13 @@
   </button>
 </nav>
 
+<!-- Mobil Menü (Gizli Başlangıçta) -->
 <div id="mobile-menu" class="md:hidden hidden bg-black/90 text-white px-6 py-6 space-y-4 text-lg font-medium">
   <a href="hizmetler.html" class="block hover:text-yellow-400">HİZMETLERİMİZ</a>
   <a href="hakkimizda.html" class="block hover:text-yellow-400">HAKKIMIZDA</a>
   <a href="iletisim.html" class="block hover:text-yellow-400">İLETİŞİM</a>
 </div>
+
 
 
   <header class="h-screen flex flex-col justify-center items-center text-center space-y-3 px-4">

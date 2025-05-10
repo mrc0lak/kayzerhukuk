@@ -1,30 +1,32 @@
-// Açılır dropdown menüsünü göster/gizle
-function toggleDropdown() {
-  const menu = document.getElementById('dropdownMenu');
-  if (menu) menu.classList.toggle('hidden');
-}
-
-// Sayfa yüklendikten sonra tüm işlemleri yap
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobil menü aç/kapat
+  // Menü Toggle (Mobil Menü)
   const menuToggle = document.getElementById('menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
 
   if (menuToggle && mobileMenu) {
     menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('hidden'); // Menü açma/kapama
+    });
+  }
+
+  // Dropdown menü toggle işlevi
+  const dropdownButton = document.querySelector('a[href="hizmetler.html"]'); // Hizmetler menüsündeki link
+  const dropdownMenu = document.querySelector('ul'); // Dropdown menü (ul)
+  
+  if (dropdownButton && dropdownMenu) {
+    dropdownButton.addEventListener('click', (e) => {
+      e.preventDefault(); // Menü linkine gitmesini engelle
+      dropdownMenu.classList.toggle('hidden'); // Dropdown menüsünü aç/kapa
     });
   }
 
   // Sayfada tıklama ile dropdown'ı kapatma
   document.addEventListener('click', function (e) {
-    const dropdownButton = document.querySelector('button[onclick="toggleDropdown()"]');
-    const dropdownMenu = document.getElementById('dropdownMenu');
     if (dropdownMenu && dropdownButton && !dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
-      dropdownMenu.classList.add('hidden');
+      dropdownMenu.classList.add('hidden'); // Dropdown menüsünü gizle
     }
   });
-
+  
   // ScrollReveal animasyonları
   if (typeof ScrollReveal !== 'undefined') {
     ScrollReveal().reveal('.service-card', {
