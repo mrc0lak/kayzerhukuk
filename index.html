@@ -7,7 +7,7 @@
   <title>Kayzer Hukuk</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="java.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body class="bg-gradient-to-r from-slate-900 to-black text-white font-sans">
@@ -68,9 +68,9 @@
   <section id="hakkimizda" class="service-card py-12 px-6 bg-gray-800 text-white">
     <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
       <div class="flex justify-center rounded-2xl border-4 border-yellow-400">
-        <img src="photos/mustafa.JPG"
-          class="w-[600px] h-[600px] md:w-[600px] md:h-[600px] object-cover rounded-2xl shadow-lg">
-      </div>
+        <img id="slideshow-image" src="photos/mustafa.JPG"
+          class="w-[650px] h-[650px] md:w-[650px] md:h-[650px] object-cover rounded-2xl shadow-lg">
+      </div>      
 
       <div>
         <h2 class="text-3xl font-bold mb-4 border-b pb-2 border-yellow-400">Hakkımda</h2>
@@ -97,10 +97,21 @@
   <section id="iletisim" class="py-20 px-6 bg-black text-center">
     <h2 class="text-4xl font-bold mb-6">Bizimle İletişime Geçin</h2>
     <p class="text-gray-400 mb-8">Sorularınızı yanıtlamaktan mutluluk duyarız.</p>
-    <a href="mailto:info@kayzerhukuk.com"
+    <a href="mailto:av.ermustafatalha@outlook.com"
       class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-full">
       E-Posta Gönder
     </a>
+    <div class="social-links py-5 flex justify-center gap-4 text-2xl">
+           <a href="https://www.instagram.com/av.ermustafatalha?igsh=MWF1d2Q2eXB2OGpjMA==" target="_blank" aria-label="Instagram" class="text-pink-600 hover:text-pink-800 transition duration-300">
+        <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/905521866417" target="_blank" aria-label="WhatsApp" class="text-green-500 hover:text-green-700 transition duration-300">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="mailto:av.ermustafatalha@outlook.com?subject=Web%20Mesajı&body=Adınız:%0AE-posta:%0AMesajınız:" aria-label="Email" class="text-blue-500 hover:text-blue-700 transition duration-300">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    </div>
   </section>
 
   <footer class="bg-gray-900 text-center text-gray-400 py-6 text-sm">

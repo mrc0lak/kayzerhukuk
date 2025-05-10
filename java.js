@@ -42,3 +42,13 @@ ScrollReveal().reveal('.service-card', {
   interval: 500,
   duration: 2000,
 });
+
+const images = ["photos/mustafa.JPG", "photos/mustafa2.jpg"];
+let currentIndex = 0;
+
+const imageElement = document.getElementById("slideshow-image");
+
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % images.length;
+  imageElement.src = images[currentIndex];
+}, 10000);
