@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Dropdown menü toggle işlevi
   const dropdownButton = document.querySelector('a[href="hizmetler.html"]'); // Hizmetler menüsündeki link
   const dropdownMenu = document.querySelector('ul'); // Dropdown menü (ul)
-  
+
   if (dropdownButton && dropdownMenu) {
     dropdownButton.addEventListener('click', (e) => {
       e.preventDefault(); // Menü linkine gitmesini engelle
@@ -22,11 +22,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Sayfada tıklama ile dropdown'ı kapatma
   document.addEventListener('click', function (e) {
-    if (dropdownMenu && dropdownButton && !dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+    if (
+      dropdownMenu &&
+      dropdownButton &&
+      !dropdownButton.contains(e.target) &&
+      !dropdownMenu.contains(e.target)
+    ) {
       dropdownMenu.classList.add('hidden'); // Dropdown menüsünü gizle
     }
   });
-  
+
   // ScrollReveal animasyonları
   if (typeof ScrollReveal !== 'undefined') {
     ScrollReveal().reveal('.service-card', {
@@ -47,6 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(() => {
       currentIndex = (currentIndex + 1) % images.length;
       imageElement.src = images[currentIndex];
-    }, 5000);
+    }, 5000); // 5 saniyede bir geçiş
   }
 });
