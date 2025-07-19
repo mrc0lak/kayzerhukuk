@@ -52,6 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(() => {
       currentIndex = (currentIndex + 1) % images.length;
       imageElement.src = images[currentIndex];
-    }, 5000); // 5 saniyede bir geçiş
+    }, 6000); // 5 saniyede bir geçiş
   }
 });
